@@ -1,0 +1,40 @@
+{% extends "loyout.html" %}
+{% block body %}
+ 
+<h2>{{ page_title }}</h2>
+
+<p>İsim: {{ad}}</p><br />
+
+<p>Kalp Aritmi Tespiti İçin Girilen Değerler</p><br />
+<p>Yaş: {{yas}}</p><br />
+<p>Cinsiyet: {{cinsiyet}}</p><br />
+<p>Ağrı Tipi: {{agritipi}}</p><br />
+<p>Dinlenme kan basıncı: {{dinkanbas}}</p><br />
+<p>mg/dl (unit) deki serum kolestrol miktarı: {{kolesterol}}</p><br />
+<p>Şeker hastalığı: {{sekerhastaligi}}</p><br />
+<p>Dinlenme halindeki ECG si: {{ecg}}</p><br />
+<p>Ulaşılmış maksimum kalp hızı: {{maxkalpr}}</p><br />
+<p>Göğüs ağrısı var mı: {{gogusagrisi}}</p><br />
+<p>Dinlenmeye göre egzersizle indüklenen ST depresyonu: {{st}}</p><br />
+<p>ST segmenti: {{stsegmenti}}</p><br />
+<p>Floroskopi ile renklendirilmiş ana damarların (0-3) sayısı: {{anadamarsay}}</p><br />
+<p>Akdeniz Anemiliği durumu: {{hasarorani}}</p><br />
+
+<p>Logistic Regression'a Göre Doğruluk Oranı: {{dogruluk1}}</p><br />
+<p>Hastalık durumu: {{durumLR}}</p><br />
+<p>Naive Bayes'e Göre Doğruluk Oranı: {{dogruluk2}}</p><br />
+<p>Hastalık durumu: {{durumNB}}</p><br />
+<p>En Yakın Komşu Algoritmasına Göre Doğruluk Oranı: {{dogruluk3}}</p><br />
+<p>Hastalık durumu: {{durumKNN}}</p><br />
+<p>Karar Ağaçlarına Göre Doğruluk Oranı: {{dogruluk4}}</p><br />
+<p>Hastalık durumu: {{durumDTC}}</p><br />
+
+
+
+
+
+
+
+
+
+{% endblock %}
