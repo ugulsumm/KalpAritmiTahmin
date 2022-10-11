@@ -70,7 +70,7 @@ models = [
 results = []
 names = []
 for name, model in models:
-    kfold = KFold(n_splits=10, random_state=7)
+    kfold = KFold(n_splits=10, random_state=7, shuffle=True)
     cv_results = cross_val_score(model, X_train, y_train, cv=kfold)
     results.append(cv_results)
     names.append(name)
