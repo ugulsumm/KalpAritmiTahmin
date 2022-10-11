@@ -67,8 +67,8 @@ sonuclar=[]
 isimler=[]
 print("(cv_result.mean)(cv_results.std)")
 for isim, model in modeller:
-    kfold = KFold(n_splits=10, random_state=7)
-    cv_results=cross_val_score(model, A_train,b_train, cv=kfold)#score yerine predict yazılabilir.?
+    kfold = KFold(n_splits=10, random_state=7, shuffle=True)
+    cv_results=cross_val_score(model, A_train,b_train, cv=kfold)
     #    cv_results=model_selection.cross_val_score(model, X_train,Y_train, cv=kfold, scoring="accuary")
     # ValueError: 'accuary' is not a valid scoring value. Use sorted(sklearn.metrics.SCORERS.keys()) to get valid options.
     sonuclar.append(cv_results)
